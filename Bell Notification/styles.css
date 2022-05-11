@@ -1,0 +1,84 @@
+body {
+    background: #000;
+  }
+  
+  .root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s linear;
+    height: 300px;
+    color: #79758b;
+    
+     
+  }:hover { 
+       color: #fff; 
+    }
+  
+  .icon {
+    position: relative;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 4px;
+    left: 42px;
+    width: 20px;
+    height: 20px;
+    background-color: #27a6e5;
+    border-radius: 50%;
+    font-size: 12px;
+    transform: scale(1);
+    color: #fff;
+  }
+  
+  .runAnimation
+    .badge {
+      animation: scale-in 0.4s ease-in;
+      animation-delay: 0.15s;
+      animation-fill-mode: backwards;
+    }
+  
+    .bellHead {
+      transform-origin: 15px 0;
+      animation: wobble 1.15s ease-in;
+    }
+  
+    .bellTongue {
+      animation: shake 1.15s ease-in;
+      animation-delay: 0.1s;
+    }
+  
+  
+  @keyframes wobble {
+    0%, 100% { transform: rotate(0deg); }
+    12.5% { transform: rotate(10deg); }
+    25% { transform: rotate(-10deg); }
+    37.5% { transform: rotate(14deg); }
+    50% { transform: rotate(-14deg); }
+    62.5% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+  }
+  
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    12.5% { transform: translateX(-2px); }
+    25% { transform: translateX(2px); }
+    37.5% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    62.5% { transform: translateX(-1px); }
+    75% { transform: translateX(1px); }
+  }
+  
+  @keyframes scale-in {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML -->
+    <div class="root runAnimation">
+        <div class="icon">
+          <svg
+               clas="bell"
+               xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 30 28"
+               width="80"
+               height="78"
+               fill="currentColor">
+          <path class="bellHead" d="M21.2,18.2v-5.9c0-3.6-1.9-6.7-5.3-7.5V4c0-1-0.8-1.8-1.8-1.8S12.3,3,12.3,4c0,0,0,0,0,0v0.8C8.9,5.6,7,8.6,7,12.3v5.9l-2.4,2.3v1.2h18.9v-1.2L21.2,18.2z" />
+          <path class="bellTongue" d="M14.1,25.2c1.3,0,2.4-1.1,2.4-2.4h-4.7C11.7,24.2,12.8,25.2,14.1,25.2z" />
+          </svg>
+          <span class="badge">5</span>
+        </div>
+      </div>
+       <!-- js -->
+   <script>
+     const bell =
+       document.querySelector('.root');
+
+       bell.addEventListener('click',
+       function(event) {
+            
+       this.classList.remove('runAnimation');
+           void this.offsetWidth;
+           this.classList.add('runAnimation');
+     });
+   </script>
+</body>
+</html>
